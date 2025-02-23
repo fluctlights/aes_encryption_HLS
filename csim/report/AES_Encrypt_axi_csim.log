@@ -1,0 +1,309 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../Test/AESfunctions.cpp in debug mode
+   Compiling ../../../Test/test_AES_full.cpp in debug mode
+   Compiling ../../../DIseno/AES_accel.cpp in debug mode
+   Generating csim.exe
+**********************************************************
+					TEST 0
+		Cipher key columns chosen: 4
+		Rounds chosen to manipulate text: 10
+**********************************************************
+
+--- SW REFERENCE VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+--- HW ACCELERATED VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+		ERRORS FOUND = 0
+
+**********************************************************
+					TEST 1
+		Cipher key columns chosen: 4
+		Rounds chosen to manipulate text: 10
+**********************************************************
+
+--- SW REFERENCE VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+--- HW ACCELERATED VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+		ERRORS FOUND = 0
+
+**********************************************************
+					TEST 2
+		Cipher key columns chosen: 4
+		Rounds chosen to manipulate text: 10
+**********************************************************
+
+--- SW REFERENCE VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+--- HW ACCELERATED VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+		ERRORS FOUND = 0
+
+**********************************************************
+					TEST 3
+		Cipher key columns chosen: 4
+		Rounds chosen to manipulate text: 10
+**********************************************************
+
+--- SW REFERENCE VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+--- HW ACCELERATED VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+		ERRORS FOUND = 0
+
+**********************************************************
+					TEST 4
+		Cipher key columns chosen: 4
+		Rounds chosen to manipulate text: 10
+**********************************************************
+
+--- SW REFERENCE VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+--- HW ACCELERATED VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+		ERRORS FOUND = 0
+
+**********************************************************
+					TEST 5
+		Cipher key columns chosen: 4
+		Rounds chosen to manipulate text: 10
+**********************************************************
+
+--- SW REFERENCE VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+--- HW ACCELERATED VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+		ERRORS FOUND = 0
+
+**********************************************************
+					TEST 6
+		Cipher key columns chosen: 4
+		Rounds chosen to manipulate text: 10
+**********************************************************
+
+--- SW REFERENCE VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+--- HW ACCELERATED VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+		ERRORS FOUND = 0
+
+**********************************************************
+					TEST 7
+		Cipher key columns chosen: 4
+		Rounds chosen to manipulate text: 10
+**********************************************************
+
+--- SW REFERENCE VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+--- HW ACCELERATED VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+		ERRORS FOUND = 0
+
+**********************************************************
+					TEST 8
+		Cipher key columns chosen: 4
+		Rounds chosen to manipulate text: 10
+**********************************************************
+
+--- SW REFERENCE VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+--- HW ACCELERATED VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+		ERRORS FOUND = 0
+
+**********************************************************
+					TEST 9
+		Cipher key columns chosen: 4
+		Rounds chosen to manipulate text: 10
+**********************************************************
+
+--- SW REFERENCE VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+--- HW ACCELERATED VERSION :: AES ENCRYPT ---
+
+Ciphered Block 1
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+Ciphered Block 2
+76 22 145 190 14 93 155 134 218 129 39 212 139 176 108 13 
+
+Ciphered Block 3
+49 168 50 59 118 115 168 252 181 168 2 145 62 105 190 25 
+
+		ERRORS FOUND = 0
+
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 8
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

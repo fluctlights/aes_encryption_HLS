@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="AES_accel.cpp" path="/home/fluctlights/HlsProjects/AES_AntonioMateo/DIseno/AES_accel.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="AESfunctions.cpp" path="/home/fluctlights/HlsProjects/AES_AntonioMateo/Test/AESfunctions.cpp"/>
+    <originFiles name="AESfunctions.h" path="/home/fluctlights/HlsProjects/AES_AntonioMateo/Test/AESfunctions.h"/>
+    <originFiles name="AESkeys.h" path="/home/fluctlights/HlsProjects/AES_AntonioMateo/Test/AESkeys.h"/>
+    <originFiles name="AEStables.h" path="/home/fluctlights/HlsProjects/AES_AntonioMateo/Test/AEStables.h"/>
+    <originFiles name="test_AES_full.cpp" path="/home/fluctlights/HlsProjects/AES_AntonioMateo/Test/test_AES_full.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

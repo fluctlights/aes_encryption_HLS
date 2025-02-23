@@ -1,0 +1,152 @@
+
+
+================================================================
+== Synthesis Summary Report of 'AES_Encrypt_axi'
+================================================================
++ General Information: 
+    * Date:           Sun Feb 23 16:10:29 2025
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        AES_AntonioMateo
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu3eg-sbva484-1-i
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------+------+------+---------+---------+----------+---------+------+----------+---------+----+-----------+-----------+-----+
+    |      Modules      | Issue|      | Latency | Latency | Iteration|         | Trip |          |         |    |           |           |     |
+    |      & Loops      | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined|  BRAM   | DSP|     FF    |    LUT    | URAM|
+    +-------------------+------+------+---------+---------+----------+---------+------+----------+---------+----+-----------+-----------+-----+
+    |+ AES_Encrypt_axi  |    II|  3.04|       53|  530.000|         -|       43|     -|       yes|  4 (~0%)|   -|  1637 (1%)|  6178 (8%)|    -|
+    | + KeyExpansion    |    II|  3.04|       10|  100.000|         -|       11|     -|       yes|        -|   -|  843 (~0%)|  3742 (5%)|    -|
+    | + AddRoundKey     |    II|  6.12|        1|   10.000|         -|        1|     -|       yes|        -|   -|  130 (~0%)|  135 (~0%)|    -|
+    | + SubBytes        |     -|  5.95|        2|   20.000|         -|        2|     -|       yes|        -|   -|  132 (~0%)|  146 (~0%)|    -|
+    | + ShiftRows       |     -|  7.30|        0|    0.000|         -|        1|     -|       yes|        -|   -|          -|          -|    -|
+    | + MixColumns      |    II|  5.69|        0|    0.000|         -|        1|     -|       yes|        -|   -|          -|  624 (~0%)|    -|
+    +-------------------+------+------+---------+---------+----------+---------+------+----------+---------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++-------------------+------------+---------------+
+| Interface         | Data Width | Address Width |
++-------------------+------------+---------------+
+| s_axi_CONTROL_BUS | 32         | 4             |
++-------------------+------------+---------------+
+
+* S_AXILITE Registers
++-------------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface         | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++-------------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_CONTROL_BUS | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_CONTROL_BUS | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_CONTROL_BUS | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_CONTROL_BUS | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
++-------------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++---------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface     | Direction | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++---------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| INPUT_STREAM  | in        | both          | 32    | 5     | 5   | 4     | 1     | 1      | 4     | 4     | 1      |
+| OUTPUT_STREAM | out       | both          | 32    | 5     | 5   | 4     | 1     | 1      | 4     | 4     | 1      |
++---------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++---------------+-----------+---------------------------------------------------------+
+| Argument      | Direction | Datatype                                                |
++---------------+-----------+---------------------------------------------------------+
+| INPUT_STREAM  | in        | stream<hls::axis<ap_uint<32>, 4, 5, 5, '8', false>, 0>& |
+| OUTPUT_STREAM | out       | stream<hls::axis<ap_uint<32>, 4, 5, 5, '8', false>, 0>& |
++---------------+-----------+---------------------------------------------------------+
+
+* SW-to-HW Mapping
++---------------+---------------+-----------+
+| Argument      | HW Interface  | HW Type   |
++---------------+---------------+-----------+
+| INPUT_STREAM  | INPUT_STREAM  | interface |
+| OUTPUT_STREAM | OUTPUT_STREAM | interface |
++---------------+---------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
+  No bind op info in design
+
+================================================================
+== Storage Report
+================================================================
++-----------------------+---------------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name                  | Usage         | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                       |               |           |      |      |        |          |      |         | Banks            |
++-----------------------+---------------+-----------+------+------+--------+----------+------+---------+------------------+
+| + AES_Encrypt_axi     |               |           | 4    | 0    |        |          |      |         |                  |
+|   CONTROL_BUS_s_axi_U | interface     | s_axilite |      |      |        |          |      |         |                  |
+|   ctx_U               | ram_t2p array |           |      |      |        | ctx      | auto | 1       | 8, 22, 1         |
+|   ctx_1_U             | ram_t2p array |           |      |      |        | ctx_1    | auto | 1       | 8, 22, 1         |
+|   ctx_2_U             | ram_t2p array |           |      |      |        | ctx_2    | auto | 1       | 8, 22, 1         |
+|   ctx_3_U             | ram_t2p array |           |      |      |        | ctx_3    | auto | 1       | 8, 22, 1         |
+|   ctx_4_U             | ram_t2p array |           |      |      |        | ctx_4    | auto | 1       | 8, 22, 1         |
+|   ctx_5_U             | ram_t2p array |           |      |      |        | ctx_5    | auto | 1       | 8, 22, 1         |
+|   ctx_6_U             | ram_t2p array |           |      |      |        | ctx_6    | auto | 1       | 8, 22, 1         |
+|   ctx_7_U             | ram_t2p array |           |      |      |        | ctx_7    | auto | 1       | 8, 22, 1         |
+|   s_box_U             | rom_np        |           | 4    |      |        | s_box    | auto | 1       | 8, 256, 1        |
++-----------------------+---------------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+------------------------------------------+-----------------------------------------------------------------------------+
+| Type      | Options                                  | Location                                                                    |
++-----------+------------------------------------------+-----------------------------------------------------------------------------+
+| unroll    | factor=3                                 | AES_AntonioMateo/DIseno/AES_accel.cpp:14 in rotate                          |
+| unroll    | factor=4                                 | AES_AntonioMateo/DIseno/AES_accel.cpp:30 in schedule_core                   |
+| pipeline  |                                          | AES_AntonioMateo/DIseno/AES_accel.cpp:63 in expand_key                      |
+| unroll    | factor=4                                 | AES_AntonioMateo/DIseno/AES_accel.cpp:66 in expand_key                      |
+| inline    |                                          | AES_AntonioMateo/DIseno/AES_accel.cpp:72 in expand_key                      |
+| unroll    | factor=4                                 | AES_AntonioMateo/DIseno/AES_accel.cpp:79 in expand_key                      |
+| pipeline  |                                          | AES_AntonioMateo/DIseno/AES_accel.cpp:95 in mixcolumns                      |
+| unroll    |                                          | AES_AntonioMateo/DIseno/AES_accel.cpp:118 in subbytes                       |
+| unroll    |                                          | AES_AntonioMateo/DIseno/AES_accel.cpp:128 in shiftrows                      |
+| pipeline  |                                          | AES_AntonioMateo/DIseno/AES_accel.cpp:162 in keyexpansion                   |
+| unroll    |                                          | AES_AntonioMateo/DIseno/AES_accel.cpp:174 in keyexpansion                   |
+| pipeline  |                                          | AES_AntonioMateo/DIseno/AES_accel.cpp:221 in addroundkey                    |
+| pipeline  | II=24                                    | AES_AntonioMateo/DIseno/AES_accel.cpp:238 in aes_encrypt_axi                |
+| interface | s_axilite port=return bundle=CONTROL_BUS | AES_AntonioMateo/DIseno/AES_accel.cpp:239 in aes_encrypt_axi, return        |
+| interface | axis port=INPUT_STREAM                   | AES_AntonioMateo/DIseno/AES_accel.cpp:240 in aes_encrypt_axi, INPUT_STREAM  |
+| interface | axis port=OUTPUT_STREAM                  | AES_AntonioMateo/DIseno/AES_accel.cpp:241 in aes_encrypt_axi, OUTPUT_STREAM |
+| pipeline  |                                          | AES_AntonioMateo/DIseno/AES_accel.cpp:254 in aes_encrypt_axi                |
+| unroll    | factor=8                                 | AES_AntonioMateo/DIseno/AES_accel.cpp:256 in aes_encrypt_axi                |
+| pipeline  |                                          | AES_AntonioMateo/DIseno/AES_accel.cpp:298 in aes_encrypt_axi                |
+| pipeline  |                                          | AES_AntonioMateo/DIseno/AES_accel.cpp:302 in aes_encrypt_axi                |
++-----------+------------------------------------------+-----------------------------------------------------------------------------+
+
+* Inferred Pragmas
++----------------------------------------------------+-----------------+-----------------------------------------+---------------------------------+
+| Source Pragma                                      | Inferred Pragma | Options                                 | Location                        |
++----------------------------------------------------+-----------------+-----------------------------------------+---------------------------------+
+| pipeline AES_AntonioMateo/DIseno/AES_accel.cpp:238 | array_partition | dim=1 type=cyclic factor=8 variable=ctx | variable ctx in aes_encrypt_axi |
++----------------------------------------------------+-----------------+-----------------------------------------+---------------------------------+
+
+

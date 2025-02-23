@@ -1,0 +1,44 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "AES_Encrypt_axi",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "AES_Encrypt_axi"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "AES_Encrypt_axi",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "AES_Encrypt_axi"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/csynth.tcl",
+    "sourceLine": 20,
+    "success": true
+  }
+]

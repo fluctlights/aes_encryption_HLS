@@ -1,0 +1,6 @@
+,AESL_inst_AES_Encrypt_axi,,module_status1.csv
+,grp_KeyExpansion_fu_206,,module_status2.csv
+,grp_AddRoundKey_fu_236,,module_status3.csv
+,grp_SubBytes_fu_276,,module_status4.csv
+,grp_ShiftRows_fu_298,,module_status5.csv
+,grp_MixColumns_fu_314,,module_status6.csv

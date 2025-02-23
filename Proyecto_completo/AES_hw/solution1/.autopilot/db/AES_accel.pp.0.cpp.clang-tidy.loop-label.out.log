@@ -1,0 +1,105 @@
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:29536:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1207_1: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:29536:7: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:30510:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:30510:5: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:30524:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:30524:5: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:30538:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:30538:5: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:32167:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:32167:7: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:38907:2: warning: Added loop label VITIS_LOOP_13_1:   [xilinx-label-all-loops]
+ for(c=0;c<3;c++)
+ ^~~
+ VITIS_LOOP_13_1: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:38907:2: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:38923:2: warning: Added loop label VITIS_LOOP_29_1:   [xilinx-label-all-loops]
+ for(a = 0; a < 4; a++)
+ ^~~
+ VITIS_LOOP_29_1: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:38923:2: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:38936:2: warning: Added loop label VITIS_LOOP_42_1:   [xilinx-label-all-loops]
+ while(in != 1) {
+ ^~~~~
+ VITIS_LOOP_42_1: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:38936:2: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:38955:5: warning: Added loop label VITIS_LOOP_61_1:   [xilinx-label-all-loops]
+    while(c < 176) {
+    ^~~~~
+    VITIS_LOOP_61_1: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:38955:5: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:38959:2: warning: Added loop label VITIS_LOOP_65_2:   [xilinx-label-all-loops]
+ for(a = 0; a < 4; a++) {
+ ^~~
+ VITIS_LOOP_65_2: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:38959:2: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:38972:9: warning: Added loop label VITIS_LOOP_78_3:   [xilinx-label-all-loops]
+        for(a = 0; a < 4; a++) {
+        ^~~
+        VITIS_LOOP_78_3: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:38972:9: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:38990:2: warning: Added loop label VITIS_LOOP_96_1:   [xilinx-label-all-loops]
+ for (i = 0; i < 4; ++i)
+ ^~~
+ VITIS_LOOP_96_1: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:38990:2: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:39021:2: warning: Added loop label VITIS_LOOP_127_1:   [xilinx-label-all-loops]
+ for (unsigned char i = 0; i < stt_lng; i++) {
+ ^~~
+ VITIS_LOOP_127_1: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:39021:2: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:39057:2: warning: Added loop label VITIS_LOOP_163_1:   [xilinx-label-all-loops]
+ for (i = 0; i < 4; ++i)
+ ^~~
+ VITIS_LOOP_163_1: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:39057:2: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:39066:3: warning: Added loop label VITIS_LOOP_172_2:   [xilinx-label-all-loops]
+  for (i = 4; i < 4 * (10 + 1); ++i)
+  ^~~
+  VITIS_LOOP_172_2: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:39066:3: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:39157:2: warning: Added loop label VITIS_LOOP_255_1:   [xilinx-label-all-loops]
+ for(i=0; i<(stt_lng*2); i+=((32/8)/sizeof(T))) {
+ ^~~
+ VITIS_LOOP_255_1: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:39157:2: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:39163:4: warning: Added loop label VITIS_LOOP_261_2:   [xilinx-label-all-loops]
+   for (int k=0; k<((32/8)/sizeof(T));k++) {
+   ^~~
+   VITIS_LOOP_261_2: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:39163:4: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:39170:4: warning: Added loop label VITIS_LOOP_268_3:   [xilinx-label-all-loops]
+   for (int k=0; k<((32/8)/sizeof(T));k++) {
+   ^~~
+   VITIS_LOOP_268_3: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:39170:4: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:39184:2: warning: Added loop label VITIS_LOOP_282_4:   [xilinx-label-all-loops]
+ for (round = 1; round < 10; round++)
+ ^~~
+ VITIS_LOOP_282_4: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:39184:2: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:39201:2: warning: Added loop label VITIS_LOOP_299_5:   [xilinx-label-all-loops]
+ for(i=0; i<stt_lng; i+=((32/8)/sizeof(T))) {
+ ^~~
+ VITIS_LOOP_299_5: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:39201:2: note: FIX-IT applied suggested code changes
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:39205:2: warning: Added loop label VITIS_LOOP_303_6:   [xilinx-label-all-loops]
+ for (int k=0; k<((32/8)/sizeof(T));k++) {
+ ^~~
+ VITIS_LOOP_303_6: 
+/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp:39205:2: note: FIX-IT applied suggested code changes

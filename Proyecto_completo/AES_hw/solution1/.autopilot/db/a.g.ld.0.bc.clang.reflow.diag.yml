@@ -1,0 +1,707 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 299, 
+                   Column: 20 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_299_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 303, 
+                   Column: 20 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_303_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 282, 
+                   Column: 20 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_282_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 255, 
+                   Column: 20 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_255_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 268, 
+                   Column: 22 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_268_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 261, 
+                   Column: 22 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_261_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 96, 
+                   Column: 19 }
+Function:        _ZL10MixColumnsPh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_96_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 127, 
+                   Column: 20 }
+Function:        _Z9ShiftRowsPh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_127_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 117, 
+                   Column: 12 }
+Function:        _Z8SubBytesPh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        SUBBYTES
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 222, 
+                   Column: 15 }
+Function:        _ZL11AddRoundKeyhPhPKh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ADDROUNDKEY
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 172, 
+                   Column: 21 }
+Function:        _ZL12KeyExpansionPhPKh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_172_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 163, 
+                   Column: 20 }
+Function:        _ZL12KeyExpansionPhPKh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_163_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_299_5
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:299:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        VITIS_LOOP_299_5
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:299:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_303_6
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:303:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_303_6
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:303:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_303_6
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:303:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_303_6
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:303:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_282_4
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:282:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_255_1
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:255:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_261_2
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:261:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_268_3
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:268:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_261_2
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:261:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_268_3
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:268:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_261_2
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:261:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_268_3
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:268:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_261_2
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:261:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_268_3
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:268:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_261_2
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:261:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_268_3
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:268:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_261_2
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:261:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_268_3
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:268:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_261_2
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:261:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_268_3
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:268:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_261_2
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:261:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 236, 
+                   Column: 0 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_268_3
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:268:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AES_Encrypt_axi
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 88, 
+                   Column: 0 }
+Function:        _ZL10MixColumnsPh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_96_1
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:96:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          MixColumns
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 123, 
+                   Column: 0 }
+Function:        _Z9ShiftRowsPh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_127_1
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:127:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          ShiftRows
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 115, 
+                   Column: 0 }
+Function:        _Z8SubBytesPh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SUBBYTES
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:117:12'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          SubBytes
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 220, 
+                   Column: 0 }
+Function:        _ZL11AddRoundKeyhPhPKh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        ADDROUNDKEY
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:222:15'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AddRoundKey
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 156, 
+                   Column: 0 }
+Function:        _ZL12KeyExpansionPhPKh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_172_2
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:172:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          KeyExpansion
+  - String:          ''' completely with a factor of '
+  - Factor:          '40'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 156, 
+                   Column: 0 }
+Function:        _ZL12KeyExpansionPhPKh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_163_1
+  - String:          ''' ('
+  - LoopLoc:         'AES_AntonioMateo/DIseno/AES_accel.cpp:163:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          KeyExpansion
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 249, 
+                   Column: 17 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=8 variable=ctx'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  AES_Encrypt_axi
+  - String:          ' '
+  - varLoc:          'AES_AntonioMateo/DIseno/AES_accel.cpp:249:17'
+  - String:          ' '
+  - PragmaSrcLoc:    'AES_AntonioMateo/DIseno/AES_accel.cpp:238:9'
+    DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 238, 
+                       Column: 9 }
+  - VarName:         ctx
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 238, 
+                   Column: 9 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '8'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            ctx
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: AES_AntonioMateo/DIseno/AES_accel.cpp, Line: 249, 
+                   Column: 17 }
+Function:        _Z15AES_Encrypt_axiRN3hls6streamINS_4axisI7ap_uintILi32EELm4ELm5ELm5ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          ctx
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '8'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...

@@ -1,0 +1,53 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">,  1436, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll, 12000, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,  7361, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,  7271, user inline pragmas are applied</column>
+            <column name="">(4) simplification,  7259, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition,  7290, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,  7290, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,  7290, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,  7290, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,  7422, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,  7438, loop and instruction simplification</column>
+            <column name="">(2) parallelization,  7422, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition, 11539, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,  7348, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,  7288, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,  7295, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="AES_Encrypt_axi" col1="AES_accel.cpp:233" col2="1436" col3="7259" col4="7422" col5="7348" col6="7295">
+                    <row id="4" col0="KeyExpansion" col1="AES_accel.cpp:155" col2="207" col3="1065" col4="1067" col5="1067" col6="1068"/>
+                    <row id="5" col0="AddRoundKey" col1="AES_accel.cpp:219" col2="258" col2_disp=" 258 (3 calls)" col3="1958" col3_disp="1,958 (11 calls)" col4="1969" col4_disp="1,969 (11 calls)" col5="1969" col5_disp="1,969 (11 calls)" col6="1980" col6_disp="1,980 (11 calls)"/>
+                    <row id="2" col0="SubBytes" col1="AES_accel.cpp:115" col2="38" col2_disp="  38 (2 calls)" col3="960" col3_disp=" 960 (10 calls)" col4="970" col4_disp=" 970 (10 calls)" col5="970" col5_disp=" 970 (10 calls)" col6="970" col6_disp=" 970 (10 calls)"/>
+                    <row id="1" col0="ShiftRows" col1="AES_accel.cpp:123" col2="172" col2_disp=" 172 (2 calls)" col3="370" col3_disp=" 370 (10 calls)" col4="370" col4_disp=" 370 (10 calls)" col5="370" col5_disp=" 370 (10 calls)" col6="370" col6_disp=" 370 (10 calls)"/>
+                    <row id="3" col0="MixColumns" col1="AES_accel.cpp:87" col2="190" col3="2448" col3_disp="2,448 (9 calls)" col4="2457" col4_disp="2,457 (9 calls)" col5="2457" col5_disp="2,457 (9 calls)" col6="2466" col6_disp="2,466 (9 calls)"/>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

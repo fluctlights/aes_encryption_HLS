@@ -1,0 +1,144 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2023.2</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>2.648</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>2.648</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>2.648</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>7.352</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>7.352</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>7.352</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>7.352</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>12</BRAM>
+    <CLB>0</CLB>
+    <DSP>0</DSP>
+    <FF>1639</FF>
+    <LATCH>0</LATCH>
+    <LUT>2134</LUT>
+    <SRL>0</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>432</BRAM>
+    <CLB>0</CLB>
+    <DSP>360</DSP>
+    <FF>141120</FF>
+    <LUT>70560</LUT>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="AES_Encrypt_axi" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="16">CONTROL_BUS_s_axi_U ctx_1_U ctx_2_U ctx_3_U ctx_4_U ctx_5_U ctx_6_U ctx_7_U ctx_U grp_AddRoundKey_fu_236 grp_KeyExpansion_fu_206 grp_SubBytes_fu_276 regslice_both_INPUT_STREAM_V_data_V_U regslice_both_OUTPUT_STREAM_V_data_V_U regslice_both_OUTPUT_STREAM_V_last_V_U s_box_U</SubModules>
+    <Resources BRAM="12" FF="1639" LUT="2134" LogicLUT="2134" RAMB18="12"/>
+    <LocalResources FF="368"/>
+  </RtlModule>
+  <RtlModule CELL="inst/CONTROL_BUS_s_axi_U" BINDMODULE="AES_Encrypt_axi_CONTROL_BUS_s_axi" DEPTH="1" FILE_NAME="AES_Encrypt_axi.v" ORIG_REF_NAME="AES_Encrypt_axi_CONTROL_BUS_s_axi">
+    <Resources FF="27" LUT="293" LogicLUT="293"/>
+  </RtlModule>
+  <RtlModule CELL="inst/ctx_1_U" BINDMODULE="AES_Encrypt_axi_ctx_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="AES_Encrypt_axi.v" ORIG_REF_NAME="AES_Encrypt_axi_ctx_RAM_AUTO_1R1W">
+    <Resources BRAM="1" LUT="16" LogicLUT="16" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/ctx_2_U" BINDMODULE="AES_Encrypt_axi_ctx_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="AES_Encrypt_axi.v" ORIG_REF_NAME="AES_Encrypt_axi_ctx_RAM_AUTO_1R1W">
+    <Resources BRAM="1" LUT="16" LogicLUT="16" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/ctx_3_U" BINDMODULE="AES_Encrypt_axi_ctx_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="AES_Encrypt_axi.v" ORIG_REF_NAME="AES_Encrypt_axi_ctx_RAM_AUTO_1R1W">
+    <Resources BRAM="1" LUT="16" LogicLUT="16" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/ctx_4_U" BINDMODULE="AES_Encrypt_axi_ctx_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="AES_Encrypt_axi.v" ORIG_REF_NAME="AES_Encrypt_axi_ctx_RAM_AUTO_1R1W">
+    <Resources BRAM="1" LUT="16" LogicLUT="16" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/ctx_5_U" BINDMODULE="AES_Encrypt_axi_ctx_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="AES_Encrypt_axi.v" ORIG_REF_NAME="AES_Encrypt_axi_ctx_RAM_AUTO_1R1W">
+    <Resources BRAM="1" LUT="16" LogicLUT="16" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/ctx_6_U" BINDMODULE="AES_Encrypt_axi_ctx_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="AES_Encrypt_axi.v" ORIG_REF_NAME="AES_Encrypt_axi_ctx_RAM_AUTO_1R1W">
+    <Resources BRAM="1" LUT="16" LogicLUT="16" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/ctx_7_U" BINDMODULE="AES_Encrypt_axi_ctx_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="AES_Encrypt_axi.v" ORIG_REF_NAME="AES_Encrypt_axi_ctx_RAM_AUTO_1R1W">
+    <Resources BRAM="1" LUT="17" LogicLUT="17" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/ctx_U" BINDMODULE="AES_Encrypt_axi_ctx_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="AES_Encrypt_axi.v" ORIG_REF_NAME="AES_Encrypt_axi_ctx_RAM_AUTO_1R1W">
+    <Resources BRAM="1" LUT="16" LogicLUT="16" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_AddRoundKey_fu_236" DEPTH="1" FILE_NAME="AES_Encrypt_axi.v" ORIG_REF_NAME="AES_Encrypt_axi_AddRoundKey">
+    <Resources FF="128" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_KeyExpansion_fu_206" DEPTH="1" FILE_NAME="AES_Encrypt_axi.v" ORIG_REF_NAME="AES_Encrypt_axi_KeyExpansion">
+    <Resources FF="843" LUT="1232" LogicLUT="1232"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_SubBytes_fu_276" DEPTH="1" FILE_NAME="AES_Encrypt_axi.v" ORIG_REF_NAME="AES_Encrypt_axi_SubBytes">
+    <Resources FF="131" LUT="92" LogicLUT="92"/>
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_INPUT_STREAM_V_data_V_U" BINDMODULE="AES_Encrypt_axi_regslice_both" DEPTH="1" FILE_NAME="AES_Encrypt_axi.v" ORIG_REF_NAME="AES_Encrypt_axi_regslice_both">
+    <Resources FF="68" LUT="38" LogicLUT="38"/>
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_OUTPUT_STREAM_V_data_V_U" BINDMODULE="AES_Encrypt_axi_regslice_both" DEPTH="1" FILE_NAME="AES_Encrypt_axi.v" ORIG_REF_NAME="AES_Encrypt_axi_regslice_both">
+    <Resources FF="68" LUT="33" LogicLUT="33"/>
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_OUTPUT_STREAM_V_last_V_U" BINDMODULE="AES_Encrypt_axi_regslice_both" DEPTH="1" FILE_NAME="AES_Encrypt_axi.v" ORIG_REF_NAME="AES_Encrypt_axi_regslice_both">
+    <Resources FF="6" LUT="6" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/s_box_U" BINDMODULE="AES_Encrypt_axi_s_box_ROM_AUTO_1R" DEPTH="1" FILE_NAME="AES_Encrypt_axi.v" ORIG_REF_NAME="AES_Encrypt_axi_s_box_ROM_AUTO_1R">
+    <Resources BRAM="4" LUT="310" LogicLUT="310" RAMB18="4"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="2.241" DATAPATH_LOGIC_DELAY="1.273" DATAPATH_NET_DELAY="0.968" ENDPOINT_PIN="bd_0_i/hls_inst/inst/ctx_2_U/ram_reg_bram_0/DINADIN[0]" LOGIC_LEVELS="3" MAX_FANOUT="55" SLACK="7.352" STARTPOINT_PIN="bd_0_i/hls_inst/inst/s_box_U/q1_reg/CLKARDCLK">
+    <CELL  NAME="bd_0_i/hls_inst/inst/s_box_U/q1_reg" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB18E2" LINE_NUMBER="88"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_104__1" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="863"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_49__0" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="863"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_8__3" PRIMITIVE_TYPE="CLB.LUT.LUT5" LINE_NUMBER="863"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ctx_2_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB18E2" LINE_NUMBER="38"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.241" DATAPATH_LOGIC_DELAY="1.273" DATAPATH_NET_DELAY="0.968" ENDPOINT_PIN="bd_0_i/hls_inst/inst/ctx_U/ram_reg_bram_0/DINADIN[0]" LOGIC_LEVELS="3" MAX_FANOUT="55" SLACK="7.352" STARTPOINT_PIN="bd_0_i/hls_inst/inst/s_box_U/q3_reg/CLKARDCLK">
+    <CELL  NAME="bd_0_i/hls_inst/inst/s_box_U/q3_reg" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB18E2" LINE_NUMBER="104"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_141__0" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="863"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_68__1" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="863"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_13__4" PRIMITIVE_TYPE="CLB.LUT.LUT5" LINE_NUMBER="863"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ctx_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB18E2" LINE_NUMBER="38"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.227" DATAPATH_LOGIC_DELAY="1.257" DATAPATH_NET_DELAY="0.970" ENDPOINT_PIN="bd_0_i/hls_inst/inst/ctx_3_U/ram_reg_bram_0/DINADIN[0]" LOGIC_LEVELS="3" MAX_FANOUT="57" SLACK="7.366" STARTPOINT_PIN="bd_0_i/hls_inst/inst/s_box_U/q1_reg/CLKBWRCLK">
+    <CELL  NAME="bd_0_i/hls_inst/inst/s_box_U/q1_reg" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB18E2" LINE_NUMBER="88"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_107" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="863"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_49" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="863"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_8__2" PRIMITIVE_TYPE="CLB.LUT.LUT5" LINE_NUMBER="863"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ctx_3_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB18E2" LINE_NUMBER="38"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.239" DATAPATH_LOGIC_DELAY="1.309" DATAPATH_NET_DELAY="0.930" ENDPOINT_PIN="bd_0_i/hls_inst/inst/s_box_U/q1_reg/ADDRARDADDR[5]" LOGIC_LEVELS="3" MAX_FANOUT="59" SLACK="7.377" STARTPOINT_PIN="bd_0_i/hls_inst/inst/s_box_U/q1_reg/CLKBWRCLK">
+    <CELL  NAME="bd_0_i/hls_inst/inst/s_box_U/q1_reg" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB18E2" LINE_NUMBER="88"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_135__0" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="863"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_68__3" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="863"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/q1_reg_i_7" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="116"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.167" DATAPATH_LOGIC_DELAY="1.317" DATAPATH_NET_DELAY="0.850" ENDPOINT_PIN="bd_0_i/hls_inst/inst/s_box_U/q1_reg/ADDRARDADDR[4]" LOGIC_LEVELS="3" MAX_FANOUT="57" SLACK="7.380" STARTPOINT_PIN="bd_0_i/hls_inst/inst/s_box_U/q1_reg/CLKBWRCLK">
+    <CELL  NAME="bd_0_i/hls_inst/inst/s_box_U/q1_reg" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB18E2" LINE_NUMBER="88"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_141__3" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="863"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_72__2" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="863"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/q1_reg_i_8" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="116"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/AES_Encrypt_axi_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/AES_Encrypt_axi_failfast_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/AES_Encrypt_axi_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/AES_Encrypt_axi_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/AES_Encrypt_axi_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/AES_Encrypt_axi_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

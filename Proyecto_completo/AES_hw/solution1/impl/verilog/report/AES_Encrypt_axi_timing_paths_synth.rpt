@@ -1,0 +1,548 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date              : Sun Feb 23 16:17:02 2025
+| Host              : ubuntu running 64-bit Ubuntu 22.04.5 LTS
+| Command           : report_timing -max_paths 10 -file ./report/AES_Encrypt_axi_timing_paths_synth.rpt
+| Design            : bd_0_wrapper
+| Device            : xczu3eg-sbva484
+| Speed File        : -1  PRODUCTION 1.30 05-15-2022
+| Design State      : Synthesized
+| Temperature Grade : I
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             7.352ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/s_box_U/q1_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/ctx_2_U/ram_reg_bram_0/DINADIN[0]
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.241ns  (logic 1.273ns (56.805%)  route 0.968ns (43.195%))
+  Logic Levels:           3  (LUT5=1 LUT6=2)
+  Clock Path Skew:        -0.040ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.041ns = ( 10.041 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.081ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.081     0.081    bd_0_i/hls_inst/inst/s_box_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q1_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.014     1.095 r  bd_0_i/hls_inst/inst/s_box_U/q1_reg/DOUTADOUT[0]
+                         net (fo=55, unplaced)        0.308     1.403    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/tempa_6_reg_3571_reg[7]_2[0]
+                         LUT6 (Prop_LUT6_I0_O)        0.179     1.582 f  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_104__1/O
+                         net (fo=1, unplaced)         0.214     1.796    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_104__1_n_0
+                         LUT6 (Prop_LUT6_I0_O)        0.040     1.836 f  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_49__0/O
+                         net (fo=1, unplaced)         0.214     2.050    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_49__0_n_0
+                         LUT5 (Prop_LUT5_I3_O)        0.040     2.090 r  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_8__3/O
+                         net (fo=1, unplaced)         0.232     2.322    bd_0_i/hls_inst/inst/ctx_2_U/DINADIN[0]
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/ctx_2_U/ram_reg_bram_0/DINADIN[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.041    10.041    bd_0_i/hls_inst/inst/ctx_2_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/ctx_2_U/ram_reg_bram_0/CLKARDCLK
+                         clock pessimism              0.000    10.041    
+                         clock uncertainty           -0.035    10.006    
+                         RAMB18E2 (Setup_RAMB18E2_CLKARDCLK_DINADIN[0])
+                                                     -0.332     9.674    bd_0_i/hls_inst/inst/ctx_2_U/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          9.674    
+                         arrival time                          -2.322    
+  -------------------------------------------------------------------
+                         slack                                  7.352    
+
+Slack (MET) :             7.352ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/s_box_U/q3_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/ctx_U/ram_reg_bram_0/DINADIN[0]
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.241ns  (logic 1.273ns (56.805%)  route 0.968ns (43.195%))
+  Logic Levels:           3  (LUT5=1 LUT6=2)
+  Clock Path Skew:        -0.040ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.041ns = ( 10.041 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.081ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.081     0.081    bd_0_i/hls_inst/inst/s_box_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q3_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.014     1.095 r  bd_0_i/hls_inst/inst/s_box_U/q3_reg/DOUTADOUT[0]
+                         net (fo=55, unplaced)        0.308     1.403    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/tempa_4_reg_3561_reg[7]_1[0]
+                         LUT6 (Prop_LUT6_I0_O)        0.179     1.582 f  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_141__0/O
+                         net (fo=1, unplaced)         0.214     1.796    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_141__0_n_0
+                         LUT6 (Prop_LUT6_I0_O)        0.040     1.836 f  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_68__1/O
+                         net (fo=1, unplaced)         0.214     2.050    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_68__1_n_0
+                         LUT5 (Prop_LUT5_I3_O)        0.040     2.090 r  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_13__4/O
+                         net (fo=1, unplaced)         0.232     2.322    bd_0_i/hls_inst/inst/ctx_U/DINADIN[0]
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/ctx_U/ram_reg_bram_0/DINADIN[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.041    10.041    bd_0_i/hls_inst/inst/ctx_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/ctx_U/ram_reg_bram_0/CLKARDCLK
+                         clock pessimism              0.000    10.041    
+                         clock uncertainty           -0.035    10.006    
+                         RAMB18E2 (Setup_RAMB18E2_CLKARDCLK_DINADIN[0])
+                                                     -0.332     9.674    bd_0_i/hls_inst/inst/ctx_U/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          9.674    
+                         arrival time                          -2.322    
+  -------------------------------------------------------------------
+                         slack                                  7.352    
+
+Slack (MET) :             7.366ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/s_box_U/q1_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/ctx_3_U/ram_reg_bram_0/DINADIN[0]
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.227ns  (logic 1.257ns (56.444%)  route 0.970ns (43.556%))
+  Logic Levels:           3  (LUT5=1 LUT6=2)
+  Clock Path Skew:        -0.040ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.041ns = ( 10.041 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.081ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.081     0.081    bd_0_i/hls_inst/inst/s_box_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q1_reg/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKBWRCLK_DOUTBDOUT[0])
+                                                      0.998     1.079 r  bd_0_i/hls_inst/inst/s_box_U/q1_reg/DOUTBDOUT[0]
+                         net (fo=57, unplaced)        0.310     1.389    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/DOUTBDOUT[0]
+                         LUT6 (Prop_LUT6_I0_O)        0.179     1.568 f  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_107/O
+                         net (fo=1, unplaced)         0.214     1.782    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_107_n_0
+                         LUT6 (Prop_LUT6_I0_O)        0.040     1.822 f  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_49/O
+                         net (fo=1, unplaced)         0.214     2.036    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_49_n_0
+                         LUT5 (Prop_LUT5_I3_O)        0.040     2.076 r  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_8__2/O
+                         net (fo=1, unplaced)         0.232     2.308    bd_0_i/hls_inst/inst/ctx_3_U/DINADIN[0]
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/ctx_3_U/ram_reg_bram_0/DINADIN[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.041    10.041    bd_0_i/hls_inst/inst/ctx_3_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/ctx_3_U/ram_reg_bram_0/CLKARDCLK
+                         clock pessimism              0.000    10.041    
+                         clock uncertainty           -0.035    10.006    
+                         RAMB18E2 (Setup_RAMB18E2_CLKARDCLK_DINADIN[0])
+                                                     -0.332     9.674    bd_0_i/hls_inst/inst/ctx_3_U/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          9.674    
+                         arrival time                          -2.308    
+  -------------------------------------------------------------------
+                         slack                                  7.366    
+
+Slack (MET) :             7.377ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/s_box_U/q1_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/s_box_U/q1_reg/ADDRARDADDR[5]
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.239ns  (logic 1.309ns (58.464%)  route 0.930ns (41.536%))
+  Logic Levels:           3  (LUT6=3)
+  Clock Path Skew:        -0.040ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.041ns = ( 10.041 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.081ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.081     0.081    bd_0_i/hls_inst/inst/s_box_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q1_reg/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKBWRCLK_DOUTBDOUT[1])
+                                                      0.990     1.071 r  bd_0_i/hls_inst/inst/s_box_U/q1_reg/DOUTBDOUT[1]
+                         net (fo=59, unplaced)        0.312     1.383    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/DOUTBDOUT[1]
+                         LUT6 (Prop_LUT6_I0_O)        0.179     1.562 f  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_135__0/O
+                         net (fo=1, unplaced)         0.159     1.721    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_135__0_n_0
+                         LUT6 (Prop_LUT6_I2_O)        0.100     1.821 r  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_68__3/O
+                         net (fo=2, unplaced)         0.214     2.035    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_68__3_n_0
+                         LUT6 (Prop_LUT6_I4_O)        0.040     2.075 r  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/q1_reg_i_7/O
+                         net (fo=1, unplaced)         0.245     2.320    bd_0_i/hls_inst/inst/s_box_U/q1_reg_44[1]
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q1_reg/ADDRARDADDR[5]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.041    10.041    bd_0_i/hls_inst/inst/s_box_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q1_reg/CLKARDCLK
+                         clock pessimism              0.000    10.041    
+                         clock uncertainty           -0.035    10.006    
+                         RAMB18E2 (Setup_RAMB18E2_CLKARDCLK_ADDRARDADDR[5])
+                                                     -0.309     9.697    bd_0_i/hls_inst/inst/s_box_U/q1_reg
+  -------------------------------------------------------------------
+                         required time                          9.697    
+                         arrival time                          -2.320    
+  -------------------------------------------------------------------
+                         slack                                  7.377    
+
+Slack (MET) :             7.380ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/s_box_U/q1_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/s_box_U/q1_reg/ADDRARDADDR[4]
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.167ns  (logic 1.317ns (60.775%)  route 0.850ns (39.225%))
+  Logic Levels:           3  (LUT6=3)
+  Clock Path Skew:        -0.040ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.041ns = ( 10.041 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.081ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.081     0.081    bd_0_i/hls_inst/inst/s_box_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q1_reg/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKBWRCLK_DOUTBDOUT[0])
+                                                      0.998     1.079 r  bd_0_i/hls_inst/inst/s_box_U/q1_reg/DOUTBDOUT[0]
+                         net (fo=57, unplaced)        0.310     1.389    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/DOUTBDOUT[0]
+                         LUT6 (Prop_LUT6_I0_O)        0.179     1.568 f  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_141__3/O
+                         net (fo=1, unplaced)         0.159     1.727    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_141__3_n_0
+                         LUT6 (Prop_LUT6_I2_O)        0.100     1.827 r  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_72__2/O
+                         net (fo=2, unplaced)         0.214     2.041    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_72__2_n_0
+                         LUT6 (Prop_LUT6_I4_O)        0.040     2.081 r  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/q1_reg_i_8/O
+                         net (fo=1, unplaced)         0.167     2.248    bd_0_i/hls_inst/inst/s_box_U/q1_reg_44[0]
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q1_reg/ADDRARDADDR[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.041    10.041    bd_0_i/hls_inst/inst/s_box_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q1_reg/CLKARDCLK
+                         clock pessimism              0.000    10.041    
+                         clock uncertainty           -0.035    10.006    
+                         RAMB18E2 (Setup_RAMB18E2_CLKARDCLK_ADDRARDADDR[4])
+                                                     -0.378     9.628    bd_0_i/hls_inst/inst/s_box_U/q1_reg
+  -------------------------------------------------------------------
+                         required time                          9.628    
+                         arrival time                          -2.248    
+  -------------------------------------------------------------------
+                         slack                                  7.380    
+
+Slack (MET) :             7.383ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/s_box_U/q3_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/s_box_U/q3_reg/ADDRARDADDR[7]
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.236ns  (logic 1.269ns (56.753%)  route 0.967ns (43.247%))
+  Logic Levels:           3  (LUT5=1 LUT6=2)
+  Clock Path Skew:        -0.040ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.041ns = ( 10.041 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.081ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.081     0.081    bd_0_i/hls_inst/inst/s_box_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q3_reg/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKBWRCLK_DOUTBDOUT[3])
+                                                      0.979     1.060 r  bd_0_i/hls_inst/inst/s_box_U/q3_reg/DOUTBDOUT[3]
+                         net (fo=57, unplaced)        0.350     1.410    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/tempa_5_reg_3566_reg[7]_2[3]
+                         LUT6 (Prop_LUT6_I1_O)        0.150     1.560 f  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_124__1/O
+                         net (fo=1, unplaced)         0.214     1.774    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_124__1_n_0
+                         LUT5 (Prop_LUT5_I2_O)        0.040     1.814 f  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_62__0/O
+                         net (fo=2, unplaced)         0.159     1.973    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_62__0_n_0
+                         LUT6 (Prop_LUT6_I5_O)        0.100     2.073 r  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/q3_reg_i_6/O
+                         net (fo=1, unplaced)         0.244     2.317    bd_0_i/hls_inst/inst/s_box_U/q3_reg_45[3]
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q3_reg/ADDRARDADDR[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.041    10.041    bd_0_i/hls_inst/inst/s_box_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q3_reg/CLKARDCLK
+                         clock pessimism              0.000    10.041    
+                         clock uncertainty           -0.035    10.006    
+                         RAMB18E2 (Setup_RAMB18E2_CLKARDCLK_ADDRARDADDR[7])
+                                                     -0.306     9.700    bd_0_i/hls_inst/inst/s_box_U/q3_reg
+  -------------------------------------------------------------------
+                         required time                          9.700    
+                         arrival time                          -2.317    
+  -------------------------------------------------------------------
+                         slack                                  7.383    
+
+Slack (MET) :             7.395ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/s_box_U/q1_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/s_box_U/q1_reg/ADDRARDADDR[7]
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.224ns  (logic 1.311ns (58.948%)  route 0.913ns (41.052%))
+  Logic Levels:           3  (LUT5=1 LUT6=2)
+  Clock Path Skew:        -0.040ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.041ns = ( 10.041 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.081ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.081     0.081    bd_0_i/hls_inst/inst/s_box_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q1_reg/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKBWRCLK_DOUTBDOUT[3])
+                                                      0.979     1.060 r  bd_0_i/hls_inst/inst/s_box_U/q1_reg/DOUTBDOUT[3]
+                         net (fo=55, unplaced)        0.349     1.409    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/DOUTBDOUT[3]
+                         LUT6 (Prop_LUT6_I2_O)        0.116     1.525 r  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_125__2/O
+                         net (fo=1, unplaced)         0.161     1.686    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_125__2_n_0
+                         LUT5 (Prop_LUT5_I3_O)        0.116     1.802 f  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_61__0/O
+                         net (fo=2, unplaced)         0.159     1.961    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_61__0_n_0
+                         LUT6 (Prop_LUT6_I5_O)        0.100     2.061 r  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/q1_reg_i_5/O
+                         net (fo=1, unplaced)         0.244     2.305    bd_0_i/hls_inst/inst/s_box_U/q1_reg_44[3]
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q1_reg/ADDRARDADDR[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.041    10.041    bd_0_i/hls_inst/inst/s_box_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q1_reg/CLKARDCLK
+                         clock pessimism              0.000    10.041    
+                         clock uncertainty           -0.035    10.006    
+                         RAMB18E2 (Setup_RAMB18E2_CLKARDCLK_ADDRARDADDR[7])
+                                                     -0.306     9.700    bd_0_i/hls_inst/inst/s_box_U/q1_reg
+  -------------------------------------------------------------------
+                         required time                          9.700    
+                         arrival time                          -2.305    
+  -------------------------------------------------------------------
+                         slack                                  7.395    
+
+Slack (MET) :             7.397ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/s_box_U/q3_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/s_box_U/q3_reg/ADDRARDADDR[4]
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.150ns  (logic 1.304ns (60.651%)  route 0.846ns (39.349%))
+  Logic Levels:           3  (LUT6=3)
+  Clock Path Skew:        -0.040ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.041ns = ( 10.041 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.081ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.081     0.081    bd_0_i/hls_inst/inst/s_box_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q3_reg/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKBWRCLK_DOUTBDOUT[0])
+                                                      0.998     1.079 r  bd_0_i/hls_inst/inst/s_box_U/q3_reg/DOUTBDOUT[0]
+                         net (fo=57, unplaced)        0.304     1.383    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/tempa_5_reg_3566_reg[7]_2[0]
+                         LUT6 (Prop_LUT6_I2_O)        0.150     1.533 r  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_140__3/O
+                         net (fo=1, unplaced)         0.161     1.694    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_140__3_n_0
+                         LUT6 (Prop_LUT6_I1_O)        0.116     1.810 r  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_73__3/O
+                         net (fo=2, unplaced)         0.214     2.024    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_73__3_n_0
+                         LUT6 (Prop_LUT6_I4_O)        0.040     2.064 r  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/q3_reg_i_9/O
+                         net (fo=1, unplaced)         0.167     2.231    bd_0_i/hls_inst/inst/s_box_U/q3_reg_45[0]
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q3_reg/ADDRARDADDR[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.041    10.041    bd_0_i/hls_inst/inst/s_box_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q3_reg/CLKARDCLK
+                         clock pessimism              0.000    10.041    
+                         clock uncertainty           -0.035    10.006    
+                         RAMB18E2 (Setup_RAMB18E2_CLKARDCLK_ADDRARDADDR[4])
+                                                     -0.378     9.628    bd_0_i/hls_inst/inst/s_box_U/q3_reg
+  -------------------------------------------------------------------
+                         required time                          9.628    
+                         arrival time                          -2.231    
+  -------------------------------------------------------------------
+                         slack                                  7.397    
+
+Slack (MET) :             7.407ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/s_box_U/q3_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/s_box_U/q3_reg/ADDRARDADDR[11]
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.215ns  (logic 1.276ns (57.607%)  route 0.939ns (42.393%))
+  Logic Levels:           3  (LUT6=3)
+  Clock Path Skew:        -0.040ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.041ns = ( 10.041 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.081ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.081     0.081    bd_0_i/hls_inst/inst/s_box_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q3_reg/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKBWRCLK_DOUTBDOUT[7])
+                                                      0.957     1.038 r  bd_0_i/hls_inst/inst/s_box_U/q3_reg/DOUTBDOUT[7]
+                         net (fo=61, unplaced)        0.312     1.350    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/tempa_5_reg_3566_reg[7]_2[7]
+                         LUT6 (Prop_LUT6_I0_O)        0.179     1.529 f  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_99__2/O
+                         net (fo=1, unplaced)         0.159     1.688    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_99__2_n_0
+                         LUT6 (Prop_LUT6_I2_O)        0.100     1.788 r  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_45__2/O
+                         net (fo=2, unplaced)         0.214     2.002    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_45__2_n_0
+                         LUT6 (Prop_LUT6_I4_O)        0.040     2.042 r  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/q3_reg_i_2/O
+                         net (fo=1, unplaced)         0.254     2.296    bd_0_i/hls_inst/inst/s_box_U/q3_reg_45[7]
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q3_reg/ADDRARDADDR[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.041    10.041    bd_0_i/hls_inst/inst/s_box_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q3_reg/CLKARDCLK
+                         clock pessimism              0.000    10.041    
+                         clock uncertainty           -0.035    10.006    
+                         RAMB18E2 (Setup_RAMB18E2_CLKARDCLK_ADDRARDADDR[11])
+                                                     -0.303     9.703    bd_0_i/hls_inst/inst/s_box_U/q3_reg
+  -------------------------------------------------------------------
+                         required time                          9.703    
+                         arrival time                          -2.296    
+  -------------------------------------------------------------------
+                         slack                                  7.407    
+
+Slack (MET) :             7.409ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/s_box_U/q1_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/ctx_7_U/ram_reg_bram_0/DINBDIN[0]
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.223ns  (logic 1.317ns (59.244%)  route 0.906ns (40.756%))
+  Logic Levels:           3  (LUT6=3)
+  Clock Path Skew:        -0.039ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.042ns = ( 10.042 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.081ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.081     0.081    bd_0_i/hls_inst/inst/s_box_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/s_box_U/q1_reg/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKBWRCLK_DOUTBDOUT[0])
+                                                      0.998     1.079 r  bd_0_i/hls_inst/inst/s_box_U/q1_reg/DOUTBDOUT[0]
+                         net (fo=57, unplaced)        0.310     1.389    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/DOUTBDOUT[0]
+                         LUT6 (Prop_LUT6_I0_O)        0.179     1.568 f  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_141__3/O
+                         net (fo=1, unplaced)         0.159     1.727    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_141__3_n_0
+                         LUT6 (Prop_LUT6_I2_O)        0.100     1.827 r  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_72__2/O
+                         net (fo=2, unplaced)         0.214     2.041    bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_72__2_n_0
+                         LUT6 (Prop_LUT6_I4_O)        0.040     2.081 r  bd_0_i/hls_inst/inst/grp_KeyExpansion_fu_206/ram_reg_bram_0_i_16__6/O
+                         net (fo=1, unplaced)         0.223     2.304    bd_0_i/hls_inst/inst/ctx_7_U/DINBDIN[0]
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/ctx_7_U/ram_reg_bram_0/DINBDIN[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=1662, unset)         0.042    10.042    bd_0_i/hls_inst/inst/ctx_7_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/ctx_7_U/ram_reg_bram_0/CLKBWRCLK
+                         clock pessimism              0.000    10.042    
+                         clock uncertainty           -0.035    10.007    
+                         RAMB18E2 (Setup_RAMB18E2_CLKBWRCLK_DINBDIN[0])
+                                                     -0.294     9.713    bd_0_i/hls_inst/inst/ctx_7_U/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          9.713    
+                         arrival time                          -2.304    
+  -------------------------------------------------------------------
+                         slack                                  7.409    
+
+
+
+

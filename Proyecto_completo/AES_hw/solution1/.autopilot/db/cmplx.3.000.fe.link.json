@@ -1,0 +1,94 @@
+{
+  "0": {
+    "basicblocks": 37,
+    "calls": "4 5 2 1 3 5 2 1 5",
+    "file": "AES_accel.cpp",
+    "fileloc": 233,
+    "instructions": 243,
+    "loads": {
+      "L": 9
+    },
+    "name": "AES_Encrypt_axi",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 1436
+  },
+  "1": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "AES_accel.cpp",
+    "fileloc": 123,
+    "instructions": 86,
+    "loads": {
+      "L": 17
+    },
+    "name": "ShiftRows",
+    "stores": {
+      "L": 17
+    },
+    "total_instructions": 86
+  },
+  "2": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "AES_accel.cpp",
+    "fileloc": 115,
+    "instructions": 19,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "name": "SubBytes",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 19
+  },
+  "3": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "AES_accel.cpp",
+    "fileloc": 87,
+    "instructions": 190,
+    "loads": {
+      "L": 16
+    },
+    "name": "MixColumns",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 190
+  },
+  "4": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "AES_accel.cpp",
+    "fileloc": 155,
+    "instructions": 207,
+    "loads": {
+      "G": 5,
+      "L": 25
+    },
+    "name": "KeyExpansion",
+    "stores": {
+      "L": 21
+    },
+    "total_instructions": 207
+  },
+  "5": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "AES_accel.cpp",
+    "fileloc": 219,
+    "instructions": 86,
+    "loads": {
+      "L": 8
+    },
+    "name": "AddRoundKey",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 86
+  }
+}

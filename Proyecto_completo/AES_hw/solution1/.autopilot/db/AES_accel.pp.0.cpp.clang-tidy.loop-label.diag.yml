@@ -1,0 +1,193 @@
+---
+MainSourceFile:  /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1207_1:  '
+    FileOffset:      1207
+    FilePath:        "/home/fluctlights/Escritorio/PERTE/Diseño_de_Circuitos/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_base.h"
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          865398
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1207_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        "/home/fluctlights/Escritorio/PERTE/Diseño_de_Circuitos/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h"
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1094346
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        "/home/fluctlights/Escritorio/PERTE/Diseño_de_Circuitos/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h"
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1094810
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        "/home/fluctlights/Escritorio/PERTE/Diseño_de_Circuitos/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h"
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1095275
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        "/home/fluctlights/Escritorio/PERTE/Diseño_de_Circuitos/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h"
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1380587
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_13_1:  '
+    FileOffset:      13
+    FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/DIseno/AES_accel.cpp
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1915361
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_13_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_29_1:  '
+    FileOffset:      29
+    FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/DIseno/AES_accel.cpp
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1915537
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_29_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_42_1:  '
+    FileOffset:      42
+    FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/DIseno/AES_accel.cpp
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1915721
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_42_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_61_1:  '
+    FileOffset:      61
+    FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/DIseno/AES_accel.cpp
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1915984
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_61_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_65_2:  '
+    FileOffset:      65
+    FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/DIseno/AES_accel.cpp
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1916025
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_65_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_78_3:  '
+    FileOffset:      78
+    FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/DIseno/AES_accel.cpp
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1916217
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_78_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_96_1:  '
+    FileOffset:      96
+    FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/DIseno/AES_accel.cpp
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1916478
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_96_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_127_1:  '
+    FileOffset:      127
+    FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/DIseno/AES_accel.cpp
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1917335
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_127_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_163_1:  '
+    FileOffset:      163
+    FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/DIseno/AES_accel.cpp
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1918032
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_163_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_172_2:  '
+    FileOffset:      172
+    FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/DIseno/AES_accel.cpp
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1918252
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_172_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_255_1:  '
+    FileOffset:      255
+    FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/DIseno/AES_accel.cpp
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1920411
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_255_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_261_2:  '
+    FileOffset:      261
+    FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/DIseno/AES_accel.cpp
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1920553
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_261_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_268_3:  '
+    FileOffset:      268
+    FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/DIseno/AES_accel.cpp
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1920668
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_268_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_282_4:  '
+    FileOffset:      282
+    FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/DIseno/AES_accel.cpp
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1920887
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_282_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_299_5:  '
+    FileOffset:      299
+    FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/DIseno/AES_accel.cpp
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1921141
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_299_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_303_6:  '
+    FileOffset:      303
+    FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/DIseno/AES_accel.cpp
+    Replacements:    
+      - FilePath:        /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/.autopilot/db/AES_accel.pp.0.cpp
+        Offset:          1921223
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_303_6: '
+...

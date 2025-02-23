@@ -1,0 +1,503 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Feb 23 16:13:35 2025
+# Process ID: 5611
+# Current directory: /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line: vivado -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file: /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file: /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/vivado.jou
+# Running On: ubuntu, OS: Linux, CPU Frequency: 2799.965 MHz, CPU Physical cores: 4, Host memory: 16570 MB
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1326.922 ; gain = 0.023 ; free physical = 3950 ; free virtual = 18276
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/fluctlights/Escritorio/PERTE/Diseño_de_Circuitos/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+Command: synth_design -top bd_0_hls_inst_0 -part xczu3eg-sbva484-1-i -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5617
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2465.051 ; gain = 289.777 ; free physical = 2347 ; free virtual = 16847
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'AES_Encrypt_axi' [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_Encrypt_axi_s_box_ROM_AUTO_1R' [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_s_box_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './AES_Encrypt_axi_s_box_ROM_AUTO_1R.dat' is read successfully [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_s_box_ROM_AUTO_1R.v:69]
+INFO: [Synth 8-3876] $readmem data file './AES_Encrypt_axi_s_box_ROM_AUTO_1R.dat' is read successfully [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_s_box_ROM_AUTO_1R.v:70]
+INFO: [Synth 8-3876] $readmem data file './AES_Encrypt_axi_s_box_ROM_AUTO_1R.dat' is read successfully [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_s_box_ROM_AUTO_1R.v:71]
+INFO: [Synth 8-3876] $readmem data file './AES_Encrypt_axi_s_box_ROM_AUTO_1R.dat' is read successfully [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_s_box_ROM_AUTO_1R.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Encrypt_axi_s_box_ROM_AUTO_1R' (0#1) [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_s_box_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'AES_Encrypt_axi_ctx_RAM_AUTO_1R1W' [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_ctx_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Encrypt_axi_ctx_RAM_AUTO_1R1W' (0#1) [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_ctx_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'AES_Encrypt_axi_KeyExpansion' [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_KeyExpansion.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Encrypt_axi_KeyExpansion' (0#1) [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_KeyExpansion.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_Encrypt_axi_AddRoundKey' [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_AddRoundKey.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Encrypt_axi_AddRoundKey' (0#1) [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_AddRoundKey.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_Encrypt_axi_SubBytes' [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_SubBytes.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Encrypt_axi_SubBytes' (0#1) [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_SubBytes.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_Encrypt_axi_ShiftRows' [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_ShiftRows.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Encrypt_axi_ShiftRows' (0#1) [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_ShiftRows.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_Encrypt_axi_MixColumns' [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_MixColumns.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Encrypt_axi_MixColumns' (0#1) [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_MixColumns.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_Encrypt_axi_CONTROL_BUS_s_axi' [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_CONTROL_BUS_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_CONTROL_BUS_s_axi.v:197]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Encrypt_axi_CONTROL_BUS_s_axi' (0#1) [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_CONTROL_BUS_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AES_Encrypt_axi_regslice_both' [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Encrypt_axi_regslice_both' (0#1) [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'AES_Encrypt_axi_regslice_both__parameterized0' [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Encrypt_axi_regslice_both__parameterized0' (0#1) [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'AES_Encrypt_axi_regslice_both__parameterized1' [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Encrypt_axi_regslice_both__parameterized1' (0#1) [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'AES_Encrypt_axi_regslice_both__parameterized2' [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Encrypt_axi_regslice_both__parameterized2' (0#1) [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Encrypt_axi' (0#1) [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/b277/hdl/verilog/AES_Encrypt_axi_CONTROL_BUS_s_axi.v:254]
+WARNING: [Synth 8-7129] Port WDATA[31] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[30] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[29] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[28] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[27] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[26] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[25] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[24] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[23] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[22] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[21] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[20] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[19] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[18] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[17] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[16] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[15] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[14] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[13] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[12] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[11] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[10] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[9] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[8] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[6] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[5] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[4] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[3] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[2] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WSTRB[3] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WSTRB[2] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WSTRB[1] in module AES_Encrypt_axi_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module AES_Encrypt_axi_ctx_RAM_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module AES_Encrypt_axi_s_box_ROM_AUTO_1R is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2582.020 ; gain = 406.746 ; free physical = 1139 ; free virtual = 16206
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2582.020 ; gain = 406.746 ; free physical = 1114 ; free virtual = 16186
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2582.020 ; gain = 406.746 ; free physical = 1114 ; free virtual = 16186
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2582.020 ; gain = 0.000 ; free physical = 964 ; free virtual = 16110
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/AES_Encrypt_axi_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2711.832 ; gain = 0.000 ; free physical = 256 ; free virtual = 15541
+Finished Parsing XDC File [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/AES_Encrypt_axi_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2711.832 ; gain = 0.000 ; free physical = 249 ; free virtual = 15535
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2711.867 ; gain = 0.000 ; free physical = 224 ; free virtual = 15524
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 2711.867 ; gain = 536.594 ; free physical = 168 ; free virtual = 15317
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 2711.867 ; gain = 536.594 ; free physical = 168 ; free virtual = 15316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 2711.867 ; gain = 536.594 ; free physical = 168 ; free virtual = 15315
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'AES_Encrypt_axi_CONTROL_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'AES_Encrypt_axi_CONTROL_BUS_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "AES_Encrypt_axi_ctx_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-3971] The signal "AES_Encrypt_axi_ctx_RAM_AUTO_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'AES_Encrypt_axi_CONTROL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'AES_Encrypt_axi_CONTROL_BUS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 2711.867 ; gain = 536.594 ; free physical = 173 ; free virtual = 15312
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/regslice_both_OUTPUT_STREAM_V_keep_V_U' (AES_Encrypt_axi_regslice_both__parameterized0) to 'inst/regslice_both_OUTPUT_STREAM_V_strb_V_U'
+INFO: [Synth 8-223] decloning instance 'inst/regslice_both_OUTPUT_STREAM_V_id_V_U' (AES_Encrypt_axi_regslice_both__parameterized2) to 'inst/regslice_both_OUTPUT_STREAM_V_dest_V_U'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 200   
+	   3 Input      8 Bit         XORs := 9     
+	   4 Input      8 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               43 Bit    Registers := 1     
+	               32 Bit    Registers := 5     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 200   
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 11    
+	                2 Bit    Registers := 14    
+	                1 Bit    Registers := 47    
++---RAMs : 
+	              176 Bit	(22 X 8 bit)          RAMs := 8     
++---ROMs : 
+	                    ROMs := 8     
++---Muxes : 
+	  44 Input   43 Bit        Muxes := 1     
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 5     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 4     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 50    
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 21    
+	  11 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 10    
+	   4 Input    4 Bit        Muxes := 1     
+	  11 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 14    
+	   5 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 12    
+	   2 Input    1 Bit        Muxes := 44    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[31] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[30] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[29] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[28] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[27] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[26] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[25] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[24] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[23] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[22] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[21] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[20] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[19] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[18] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[17] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[16] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[15] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[14] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[13] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[12] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[11] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[10] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[9] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[8] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[6] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[5] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[4] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[3] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WDATA[2] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WSTRB[3] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WSTRB[2] in module AES_Encrypt_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_WSTRB[1] in module AES_Encrypt_axi is either unconnected or has no load
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "inst/ctx_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/ctx_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "inst/ctx_1_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/ctx_1_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "inst/ctx_2_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/ctx_2_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "inst/ctx_3_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/ctx_3_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "inst/ctx_4_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/ctx_4_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "inst/ctx_5_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/ctx_5_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "inst/ctx_6_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/ctx_6_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "inst/ctx_7_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/ctx_7_U/ram_reg" was recognized as a true dual port RAM template.
+WARNING: [Synth 8-3332] Sequential element (CONTROL_BUS_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module AES_Encrypt_axi.
+WARNING: [Synth 8-3332] Sequential element (CONTROL_BUS_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module AES_Encrypt_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 2711.867 ; gain = 536.594 ; free physical = 292 ; free virtual = 15391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++----------------+----------------+---------------+----------------+
+|Module Name     | RTL Object     | Depth x Width | Implemented As | 
++----------------+----------------+---------------+----------------+
+|AES_Encrypt_axi | s_box_U/q7_reg | 256x8         | Block RAM      | 
+|AES_Encrypt_axi | s_box_U/q6_reg | 256x8         | Block RAM      | 
+|AES_Encrypt_axi | s_box_U/q5_reg | 256x8         | Block RAM      | 
+|AES_Encrypt_axi | s_box_U/q4_reg | 256x8         | Block RAM      | 
+|AES_Encrypt_axi | s_box_U/q3_reg | 256x8         | Block RAM      | 
+|AES_Encrypt_axi | s_box_U/q2_reg | 256x8         | Block RAM      | 
+|AES_Encrypt_axi | s_box_U/q1_reg | 256x8         | Block RAM      | 
+|AES_Encrypt_axi | s_box_U/q0_reg | 256x8         | Block RAM      | 
+|AES_Encrypt_axi | s_box_U/q7_reg | 256x8         | Block RAM      | 
+|AES_Encrypt_axi | s_box_U/q6_reg | 256x8         | Block RAM      | 
+|AES_Encrypt_axi | s_box_U/q5_reg | 256x8         | Block RAM      | 
+|AES_Encrypt_axi | s_box_U/q4_reg | 256x8         | Block RAM      | 
+|AES_Encrypt_axi | s_box_U/q3_reg | 256x8         | Block RAM      | 
+|AES_Encrypt_axi | s_box_U/q2_reg | 256x8         | Block RAM      | 
+|AES_Encrypt_axi | s_box_U/q1_reg | 256x8         | Block RAM      | 
+|AES_Encrypt_axi | s_box_U/q0_reg | 256x8         | Block RAM      | 
++----------------+----------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst        | ctx_U/ram_reg   | 22 x 8(READ_FIRST)     | W | R | 22 x 8(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | ctx_1_U/ram_reg | 22 x 8(READ_FIRST)     | W | R | 22 x 8(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | ctx_2_U/ram_reg | 22 x 8(READ_FIRST)     | W | R | 22 x 8(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | ctx_3_U/ram_reg | 22 x 8(READ_FIRST)     | W | R | 22 x 8(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | ctx_4_U/ram_reg | 22 x 8(READ_FIRST)     | W | R | 22 x 8(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | ctx_5_U/ram_reg | 22 x 8(READ_FIRST)     | W | R | 22 x 8(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | ctx_6_U/ram_reg | 22 x 8(READ_FIRST)     | W | R | 22 x 8(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | ctx_7_U/ram_reg | 22 x 8(READ_FIRST)     | W | R | 22 x 8(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 3123.074 ; gain = 947.801 ; free physical = 150 ; free virtual = 15120
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:13 . Memory (MB): peak = 3268.691 ; gain = 1093.418 ; free physical = 184 ; free virtual = 14986
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst        | ctx_U/ram_reg   | 22 x 8(READ_FIRST)     | W | R | 22 x 8(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | ctx_1_U/ram_reg | 22 x 8(READ_FIRST)     | W | R | 22 x 8(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | ctx_2_U/ram_reg | 22 x 8(READ_FIRST)     | W | R | 22 x 8(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | ctx_3_U/ram_reg | 22 x 8(READ_FIRST)     | W | R | 22 x 8(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | ctx_4_U/ram_reg | 22 x 8(READ_FIRST)     | W | R | 22 x 8(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | ctx_5_U/ram_reg | 22 x 8(READ_FIRST)     | W | R | 22 x 8(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | ctx_6_U/ram_reg | 22 x 8(READ_FIRST)     | W | R | 22 x 8(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | ctx_7_U/ram_reg | 22 x 8(READ_FIRST)     | W | R | 22 x 8(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/ctx_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ctx_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ctx_1_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ctx_1_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ctx_2_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ctx_2_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ctx_3_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ctx_3_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ctx_4_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ctx_4_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ctx_5_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ctx_5_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ctx_6_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ctx_6_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ctx_7_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ctx_7_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/s_box_U/q7_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/s_box_U/q7_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/s_box_U/q5_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/s_box_U/q5_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/s_box_U/q3_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/s_box_U/q3_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/s_box_U/q1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/s_box_U/q1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 3268.691 ; gain = 1093.418 ; free physical = 185 ; free virtual = 14988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:20 . Memory (MB): peak = 3268.691 ; gain = 1093.418 ; free physical = 217 ; free virtual = 14985
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:20 . Memory (MB): peak = 3268.691 ; gain = 1093.418 ; free physical = 217 ; free virtual = 14985
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:20 . Memory (MB): peak = 3268.691 ; gain = 1093.418 ; free physical = 217 ; free virtual = 14985
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:20 . Memory (MB): peak = 3268.691 ; gain = 1093.418 ; free physical = 217 ; free virtual = 14985
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 3268.691 ; gain = 1093.418 ; free physical = 183 ; free virtual = 14962
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 3268.691 ; gain = 1093.418 ; free physical = 183 ; free virtual = 14962
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |     1|
+|2     |LUT2     |   668|
+|3     |LUT3     |   437|
+|4     |LUT4     |   177|
+|5     |LUT5     |   396|
+|6     |LUT6     |  1047|
+|7     |RAMB18E2 |    12|
+|9     |FDRE     |  1636|
+|10    |FDSE     |     3|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 3268.691 ; gain = 1093.418 ; free physical = 183 ; free virtual = 14962
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 35 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 3268.691 ; gain = 963.570 ; free physical = 166 ; free virtual = 14959
+Synthesis Optimization Complete : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 3268.699 ; gain = 1093.418 ; free physical = 166 ; free virtual = 14959
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3268.699 ; gain = 0.000 ; free physical = 461 ; free virtual = 15250
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/s_box_U/q1_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/s_box_U/q3_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/s_box_U/q5_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/s_box_U/q7_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3303.676 ; gain = 0.000 ; free physical = 457 ; free virtual = 15246
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7fc2cc3a
+INFO: [Common 17-83] Releasing license: Synthesis
+106 Infos, 70 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:01:28 . Memory (MB): peak = 3303.711 ; gain = 1970.852 ; free physical = 453 ; free virtual = 15244
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2853.595; main = 2524.895; forked = 376.796
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4265.605; main = 3303.680; forked = 996.910
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3327.688 ; gain = 0.000 ; free physical = 453 ; free virtual = 15244
+INFO: [Common 17-1381] The checkpoint '/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 820f7d45f1cebfa2
+INFO: [Coretcl 2-1174] Renamed 17 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3327.688 ; gain = 0.000 ; free physical = 426 ; free virtual = 15217
+INFO: [Common 17-1381] The checkpoint '/home/fluctlights/HlsProjects/AES_AntonioMateo/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 23 16:15:18 2025...
